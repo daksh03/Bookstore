@@ -1,0 +1,60 @@
+db.runCommand({ connectionStatus: 1 })
+exit
+db.runCommand({ connectionStatus: 1 })
+db
+use BookStore
+{ authInfo: { authenticatedUsers: [ { user: 'daksh', db: 'admin' } ], authenticatedUserRoles: [ { role: 'readWrite', db: 'BookStore' }, { role: 'root', db: 'admin' } ] }, ok: 1 use BookStore
+BookStore> db.runCommand({ connectionStatus: 1 })
+db.runCommand({ connectionStatus: 1 })
+show collections
+db.books.find()
+db.books.insertOne({ title: "Sample Book", author: "Author Name", publishedYear: 2024 })
+db.runCommand({ connectionStatus: 1 })
+db.sampleCollection.find()
+use BookStore
+db.getUser("daksh")
+db.grantRolesToUser("daksh", [{ role: "readWrite", db: "BookStore" }])
+use admin
+db.runCommand({ connectionStatus: 1 })
+db
+use BookStore
+db.runCommand({ connectionStatus: 1 })
+show dbs
+db
+db.runCommand({ connectionStatus: 1 })
+show dbs
+db.createCollection("books")
+db.runCommand({ connectionStatus: 1 })
+use BookStore
+db.runCommand({ connectionStatus: 1 })
+show users
+show dbs
+show dbs;
+db.createCollection("Book")
+db.CreateCollection("Book")
+use BookStore
+show dbs;
+exit
+show dbs;
+use BookStore;
+show dbs;
+db.createUser({ user: "admin", pwd: "admin", /* Use a secure password for production*/ roles: [{ role: "userAdminAnyDatabase", db: "admin" }] });
+db.getUsers()
+use admin
+db.getUser("daksh")
+exit
+use BookStore
+show dbs;
+mongo
+use BookStore
+show dbs;
+show dbs
+show collections;
+show dbs
+use BookStore
+show dbs
+mongo
+show db;
+show databases
+show database
+ls
